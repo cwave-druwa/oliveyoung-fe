@@ -1,0 +1,37 @@
+.footer-wrapper {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    margin-top: 50px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  .footer-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .footer-item {
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+.no-cursor .footer-title,
+.no-cursor .footer-list,
+.no-cursor .footer-item {
+  cursor: default; /* 고객센터 섹션에 커서 기본으로 설정 */
+}
