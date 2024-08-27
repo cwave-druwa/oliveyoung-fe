@@ -1,0 +1,14 @@
+/* src/pages/Challenge/Challenge.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.challenge-container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
