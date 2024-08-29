@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-olive0cognito-dev-52f65-authRole",
+      "UnauthRoleArn": "arn:aws:iam::381492005553:role/amplify-olive0cognito-dev-52f65-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::381492005553:role/amplify-olive0cognito-dev-52f65-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-olive0cognito-dev-52f65-deployment",
+      "UnauthRoleName": "amplify-olive0cognito-dev-52f65-unauthRole",
+      "StackName": "amplify-olive0cognito-dev-52f65",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:381492005553:stack/amplify-olive0cognito-dev-52f65/cb9e1d00-61d5-11ef-a76e-0a9a17036cdf",
+      "AmplifyAppId": "d1ah8elqga7hy4"
+    }
+  }
+}
