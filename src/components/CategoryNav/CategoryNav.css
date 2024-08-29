@@ -1,28 +1,61 @@
-.nav-wrapper {
+.category-nav-wrapper {
   display: flex;
   justify-content: center;
   background-color: #fff;
   border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
 }
 
-.nav-item {
+.category-nav-item {
   text-decoration: none;
   color: #333;
-  padding: 15px 20px;
+  padding: 15px 30px;
+  margin: 0 20px;
+  font-size: 24px;
   font-weight: bold;
-  font-size: 25px; /* 글자 크기 증가 */
   display: flex;
-  align-items: center; /* 세로 정렬 */
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.nav-item:hover {
-  color: #9bce26;
+.category-nav-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.video-icon,
+.threed-icon {
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+  margin-bottom: 10px;
 }
 
 .video-icon {
-  width: 24px; /* 아이콘 크기 설정 */
-  height: 24px; /* 아이콘 크기 설정 */
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M23 7l-7 5 7 5V7zM1 5h14v14H1z"/></svg>') no-repeat center center;
-  background-size: cover;
-  margin-right: 10px; /* 텍스트와의 간격 */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23333' d='M23 7l-7 5 7 5V7zM1 5h14v14H1z'/%3E%3C/svg%3E");
+}
+
+.threed-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23333' d='M12.56 14.33c-.34.27-.56.7-.56 1.17V21h7c1.1 0 2-.9 2-2v-5.98c-.94-.33-1.95-.52-3-.52-2.03 0-3.93.7-5.44 1.83z'/%3E%3Ccircle cx='18' cy='6' r='5'/%3E%3Cpath d='M11.5 6c0-1.08.27-2.1.74-3H5c-1.1 0-2 .9-2 2v14c0 .55.23 1.05.59 1.41l9.82-9.82A6.435 6.435 0 0111.5 6z'/%3E%3C/svg%3E");
+}
+
+.category-name {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
 }

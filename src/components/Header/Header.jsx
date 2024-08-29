@@ -101,13 +101,13 @@ const Header = () => {
         <input type="text" placeholder="상품명, 브랜드명 검색" className="search-input" />
         <span>🔍</span>
       </div>
-      <nav className="nav-menu">
+      <nav className="header-nav-menu">
         {isLoggedIn ? (
-          <a href="#" onClick={logout} className="nav-item">로그아웃</a>
+          <a href="#" onClick={logout} className="header-nav-item">로그아웃</a>
         ) : (
           <>
-            <a href="#" onClick={handleLogin} className="nav-item">로그인</a>
-            <a href="#" onClick={handleSignUp} className="nav-item">회원가입</a>
+            <a href="#" onClick={handleLogin} className="header-nav-item">로그인</a>
+            <a href="#" onClick={handleSignUp} className="header-nav-item">회원가입</a>
           </>
         )}
       </nav>

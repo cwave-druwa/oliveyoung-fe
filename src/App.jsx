@@ -130,6 +130,7 @@ import Home from './pages/Home/Home';
 import Challenge from './pages/Challenge/Challenge';
 import AuthHandler from './components/AuthHandler';
 import awsconfig from './aws-exports';
+import DigitalTwin from './pages/3D/DigitalTwin';
 
 Amplify.configure({
   ...awsconfig,
@@ -154,7 +155,8 @@ function App() {
         <AuthHandler />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/셔터" element={<Challenge />} />
+          <Route path="/shutter" element={<Challenge />} />
+          <Route path="/3D" element={<DigitalTwin />} />
         </Routes>
       </Router>
     </AuthProvider>

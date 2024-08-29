@@ -1,14 +1,15 @@
-/* src/pages/Challenge/Challenge.css */
-html, body, #root {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+.challenge-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-.challenge-container {
-  min-height: 100vh;
-  width: 100vw;
-  background-color: #f8f8f8;
-  display: flex;
-  flex-direction: column;
+@media (max-width: 1200px) {
+  .challenge-container {
+    max-width: 100%;
+  }
 }

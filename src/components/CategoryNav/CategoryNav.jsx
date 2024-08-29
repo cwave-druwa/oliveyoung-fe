@@ -1,34 +1,19 @@
-// import './CategoryNav.css';
-
-// const CategoryNav = () => {
-//   const categories = ['셔터'];
-
-//   return (
-//     <nav className="nav-wrapper">
-//       {categories.map((category, index) => (
-//         <a key={index} href={`/#${encodeURIComponent(category)}`} className="nav-item">
-//           <span className="video-icon"></span> {/* 아이콘 추가 */}
-//           {category}
-//         </a>
-//       ))}
-//     </nav>
-//   );
-// };
-
-// export default CategoryNav;
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './CategoryNav.css';
 
 const CategoryNav = () => {
-  const categories = ['셔터'];
+  const categories = [
+    { name: '셔터', icon: 'video-icon', endpoint: 'shutter' },
+    { name: '3D', icon: 'threed-icon', endpoint: '3d' }
+  ];
 
   return (
-    <nav className="nav-wrapper">
+    <nav className="category-nav-wrapper">
       {categories.map((category, index) => (
-        <Link key={index} to={`/${encodeURIComponent(category)}`} className="nav-item">
-          <span className="video-icon"></span>
-          {category}
+        <Link key={index} to={`/${category.endpoint}`} className="category-nav-item">
+          <span className={`${category.icon} animate-pulse`}></span>
+          <span className="category-name">{category.name}</span>
         </Link>
       ))}
     </nav>

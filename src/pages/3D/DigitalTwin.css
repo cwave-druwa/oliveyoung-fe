@@ -1,0 +1,20 @@
+/* DigitalTwin.css */
+.container3D {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw; /* viewport width의 80% */
+    height: 80vh; /* viewport height의 80% */
+    border: 2px solid #ccc; /* 경계선을 추가하여 더 잘 보이게 함 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 추가 */
+  }
+  .olive-young-logo {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    cursor: pointer; 
+    height: 70px;
+    width: auto;
+  }
+  
